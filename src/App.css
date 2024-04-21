@@ -1,38 +1,268 @@
-.App {
-  text-align: center;
+body {
+  background-color: white;
+  margin: auto;
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 5.625rem;
+  color: #66BFBF;
+  margin: 50px auto 0 auto;
+  font-family: 'Playpen Sans', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-family: 'Playpen Sans', cursive;
+  font-style: italic;
+  font-size: 2.2rem;
+  color: #FF9494;
+  font-weight: normal;
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  font-family: 'Merriweather', serif;
+  color: #867070;
+}
+
+a {
+  color: #FF9494;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+p {
+  color: #867070;
+}
+
+hr {
+  border: dotted #FF9494 6px;
+  border-bottom: none;
+  width: 2%;
+  margin: 20px auto;
+}
+
+td {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  -webkit-columns: 5;
+}
+
+.li-body {
+  list-style-type: none;
+
+}
+
+.li-body a {
+  color: #867070;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.li-body ::before {
+  color: #867070;
+}
+
+.toolkit-title {
+  margin: auto;
+  text-align: left;
+  margin-left: 40px;
+}
+
+/* Tabs style */
+
+.tabs {
+  width: 100%;
+  background: #FFD1D1;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+ul.nav-tab {
+  margin: 0 auto auto;
   display: flex;
+  border: none;
+  border-radius: 2rem;
+  padding-left: 0px;
+  float: right;
+}
+
+ul.nav-tab li {
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.7s;
+  border-radius: 2rem;
+}
+
+/* end of tabs style */
+
+/* Education Style */
+
+.education-container {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.grid-education-item1 {
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+ .grid-education-item1 p {
+  margin-left: 50px;
+
+}
+
+.grid-education-item2 a {
+  display: grid;
+}
+
+
+
+/* End of Eduacation */
+
+/* Contact Style */
+
+.contact-container {
+  display: grid;
+  grid-template-areas: "forms";
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.grid-item-title {
+  font-size: 30px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.grid-item {
+  font-size: larger;
+}
+
+.grid-form form {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  padding-left: 300px;
+}
+
+.grid-inputs {
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  height: 50px;
+  border:  1px solid #FF9494;
+  outline: none;
+  padding-left: 10px;
+  color: #FF9494;
+  border-radius: 5px;
+}
+
+.grid-inputs.message {
+  resize: none;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.btn-contact {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  width: 15%;
+  padding: 8px 10px;
+  font-size: 16px;
+  color: #FFF;
+  gap: 10px;
+  border: none;
+  border-radius: 2px;
+  background: linear-gradient(270deg, #FF9494, #fa6d86);
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* End of Contact */
+
+.top-container {
+
+  text-align: center;
+  position: relative;
+  padding-top: 220px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .middle-container {
+  margin: 20px 0;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+} */
+
+.title {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.intro {
+  margin: auto;
+  text-align: left;
+  margin-left: 40px;
+  line-height: 2;
+}
+
+.top-icon {
+  text-align: center;
+  width: 100%;
+  color: #FF9494;
+  padding-top: 200px;
+}
+
+/* .computer-img {
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+}
+
+.programmer-img {
+  width: 20%;
+  float: right;
+  margin-left: 30px;
+}
+
+.me-img {
+  width: 15%;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding-bottom: 20px 0;
+} */
+
+.footer {
+  width: 100%;
+  background: #FFD1D1;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
