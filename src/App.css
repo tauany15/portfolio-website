@@ -27,6 +27,12 @@ h3 {
   color: #867070;
 }
 
+h4 {
+  color: #867070;
+  text-decoration: underline;
+  text-align: center;
+}
+
 a {
   color: #FF9494;
   font-family: 'Montserrat', sans-serif;
@@ -53,9 +59,9 @@ td {
   font-family: 'Montserrat', sans-serif;
 }
 
-ul {
+/* ul {
   -webkit-columns: 5;
-}
+} */
 
 .li-body {
   list-style-type: none;
@@ -111,7 +117,7 @@ ul.nav-tab li {
 
 .education-container {
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 600px 600px;
   margin-left: 100px;
   margin-bottom: 100px;
   margin-top: 50px;
@@ -122,15 +128,23 @@ ul.nav-tab li {
 
 }
 
- .grid-education-item1 p {
+.grid-education-item1 p {
   margin-left: 50px;
-
 }
 
-.grid-education-item2 a {
+.grid-items {
   display: grid;
+  grid-template-columns: auto auto;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 70px;
 }
 
+.grid-items a {
+  pointer-events: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: #867070;
+}
 
 
 /* End of Eduacation */
@@ -206,15 +220,6 @@ ul.nav-tab li {
   position: relative;
   padding-top: 220px;
 }
-
-/* .middle-container {
-  margin: 20px 0;
-}
-
-.bottom-container {
-  background-color: #66BFBF;
-  padding: 50px 0 20px;
-} */
 
 .title {
   text-align: left;
