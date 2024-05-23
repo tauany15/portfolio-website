@@ -1,20 +1,27 @@
-import React from "react"
+import React from "react";
 
-function Profile() {
-    return (
-        <div class="middle-container">
-            <div id="profile" class="profile">
-                {/* <img class="me-img" src={require("../assets/photo.png")} alt="me-img"/> */}
-                <h2 id="about" class="title">About</h2>
-                <p class="intro">
-                    As a software developer, I'm not just someone with a degree in Information Systems, but someone who's deeply passionate about bringing code to life and making technology work seamlessly for people. My journey in the tech industry started with a role as a developer analyst, where I had my first taste of the magic that lines of code could create. From there, I ventured into the world of full-stack development, spending over a year immersed in building user-friendly applications.
-                    But I didn't stop there. I'm currently walking a unique path, working in technical support while concurrently honing my skills and crafting innovative projects. Why? Because I believe that the best software developers are those who understand not only how to write exceptional code but also how to provide impeccable support to those who use it. I'm on a mission to combine the best of both worlds, leveraging my technical expertise and customer-focused approach to create software that truly makes a difference.
-                    In the world of software development, it's not just about what you know; it's about the dedication and enthusiasm you bring to the craft. I'm here to push boundaries, explore new horizons, and, most importantly, to turn my passion for coding into a meaningful career that impacts lives.
-                </p>
-                <hr />
+const handleOpenFile = () => {
+
+    const filePath = '/Tauany_SilvaSantos_Resume.pdf';
+
+    console.log('Opening file:', filePath);
+
+    window.open(filePath, '_blank');
+};
+class Profile extends React.Component {
+    render() {
+        const { activeTab } = this.props;
+        return (
+            <div className={`profile-container ${activeTab !== "about" && activeTab !== null ? 'blur' : ''}`}>
+                <div id="profile" className="profile">
+                    <h2 id="about" className="title">About me!</h2>
+                    <p className="intro">
+                        As a software developer, I've transitioned from a developer analyst to full-stack development, spending over a year building a user-friendly application. Currently, I'm immersed in technical support while refining my skills. My focus is on merging technical expertise with client-centric solutions, aiming to create software that truly enhances user experiences. I'm committed to pushing boundaries and turning my passion for coding into a purposeful career.                </p>
+                    <button className="btn-resume" onClick={handleOpenFile}>Resume</button>
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default Profile;
