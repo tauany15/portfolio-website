@@ -14,6 +14,6 @@ Contributions are welcome! If you have suggestions or improvements, feel free to
 
 ## Contact
 
-If you have any questions or would like to get in touch, you can reach me at tauany.santoss@gmail.com or connect with me via https://www.linkedin.com/in/tauany-silva-santos-43a335144/
+If you have any questions or would like to get in touch, you can reach me at tauany.santoss@gmail.com or connect with me via https://www.linkedin.com/in/tauanyssantos
 
 Thank you for visiting my portfolio! 🩷
