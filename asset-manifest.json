@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.b51922a8.css",
-    "main.js": "/portfolio-website/static/js/main.d7b070ea.js",
-    "static/media/profile-image.png": "/portfolio-website/static/media/profile-image.1f73789c4c908c2fc6c1.png",
-    "index.html": "/portfolio-website/index.html",
-    "main.b51922a8.css.map": "/portfolio-website/static/css/main.b51922a8.css.map",
-    "main.d7b070ea.js.map": "/portfolio-website/static/js/main.d7b070ea.js.map"
+    "main.css": "/tauany-portfolio/static/css/main.78712559.css",
+    "main.js": "/tauany-portfolio/static/js/main.62b3761f.js",
+    "index.html": "/tauany-portfolio/index.html",
+    "main.78712559.css.map": "/tauany-portfolio/static/css/main.78712559.css.map",
+    "main.62b3761f.js.map": "/tauany-portfolio/static/js/main.62b3761f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b51922a8.css",
-    "static/js/main.d7b070ea.js"
+    "static/css/main.78712559.css",
+    "static/js/main.62b3761f.js"
   ]
 }
